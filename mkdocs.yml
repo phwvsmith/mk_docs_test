@@ -1,0 +1,56 @@
+site_name: National Data & Analytics Platform Knowledge Hub
+
+repo_url: https://github.com/Public-Health-Wales/ndap_central_doc_repo
+edit_uri: edit/main/docs/
+site_url: https://Public-Health-Wales.github.io/ndap_central_doc_repo/
+use_directory_urls: true
+
+
+theme:
+  name: material
+  logo: assets/logo.png
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.path
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.action.edit
+  palette:
+
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+extra_css:
+  - stylesheets/extra.css
+
+
+plugins:
+  - search
+  - awesome-pages
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra:
+  homepage: /
+  generator: false
+
+copyright: >
+  © Public Health Wales NHS Trust
+
+
+

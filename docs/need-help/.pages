@@ -1,0 +1,13 @@
+title: Need Help?
+
+nav:
+  - Overview: index.md
+  - How-To: how-to-edit-and-add-pages.md
+  - Common Issues and Solutions: troubleshooting.md
+  - Formatting Guide: formatting-guideline.md
+  - Content Guide: content-guideline.md
+  - Images and Files: images-and-files.md
+  - FAQ: FAQ.md
+  - Contact: Who-to-contact.md
+  
+  
