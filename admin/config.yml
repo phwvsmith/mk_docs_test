@@ -1,0 +1,24 @@
+
+# Future Decap CMS integration
+# Currently inactive due to GitHub organisation OAuth/GitHub App constraints.
+# Retained for future evaluation.
+
+backend:
+  name: github
+  repo: Public-Health-Wales/ndap_central_doc_repo
+  branch: main
+
+media_folder: docs/assets/images
+public_folder: /assets/images
+
+collections:
+  - name: pages
+    label: Documentation Pages
+    folder: docs
+    create: true
+    extension: md
+
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Body, name: body, widget: markdown }
+  
