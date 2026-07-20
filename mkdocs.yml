@@ -12,6 +12,7 @@ theme:
   features:
     - navigation.top
     - navigation.tabs
+    - navigation.indexes 
     - navigation.path
     - search.highlight
     - search.suggest
@@ -36,6 +37,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/upload-screenshot.js
+
 
 plugins:
   - search
@@ -53,4 +57,6 @@ copyright: >
   © Public Health Wales NHS Trust
 
 
-
+validation:
+  links:
+    absolute_links: warn

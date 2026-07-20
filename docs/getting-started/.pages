@@ -1,6 +1,11 @@
 title: Getting Started
 
 nav:
-  - index.md
-  - getting-started-for-analysts.md
-  - getting-started-for-engineers.md
+  - Onboarding: NDAP-Onboarding.md
+  - How To Edit Page: how-to-edit-a-page.md
+  - How To Add Page: how-to-add-a-page.md
+  - How To Edit & Add (DE): how-to-edit-&-add-page-for-engineers.md
+  - GitHub QuickStart: Git-guide.md
+  - GCP QuickStart: Getting-started-in-GCP.md
+  - VSCode QuickStart: VSCode-guide.md
+  

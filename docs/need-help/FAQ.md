@@ -19,11 +19,14 @@ The system handles everything else automatically.
 
 Most changes are published within:
 
-✅ A few seconds  
-✅ Up to 1–2 minutes in some cases  
+✅ A few minutes  
+✅ Up to 5 minutes in some cases  
+
+To see your update:
+- Refresh the page (Ctrl + F5)
 
 If you don’t see your update:
-- Refresh the page (Ctrl + F5)
+- Refresh the page (Ctrl + Shift + R)
 
 ---
 
@@ -32,7 +35,7 @@ If you don’t see your update:
 When you commit:
 
 1. A change request is created  
-2. The system checks your update  
+2. The system checks your update to make sure its not breaking anything
 3. It is merged and published automatically  
 
 You don’t need to do anything else.
@@ -46,7 +49,7 @@ This usually happens when:
 - Someone else edited the same page at the same time  
 - The system couldn’t safely combine both updates  
 
-👉 See **Common Issues** for what to do next  
+👉 See [Common Issues](https://literate-adventure-1qywq3r.pages.github.io/need-help/troubleshooting/) for what to do next  
 
 ---
 
@@ -75,7 +78,7 @@ Yes.
 - Add your content  
 - Update the `.pages` file to include it in navigation  
 
-👉 See **Editing and Adding Pages** for details  
+👉 See [How To Add A Page](https://literate-adventure-1qywq3r.pages.github.io/getting-started/how-to-add-a-page/) for detailed steps 
 
 ---
 

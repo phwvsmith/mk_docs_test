@@ -1,8 +1,15 @@
-# 🚀 How to Edit & Add : Data Analysts
+# How To Edit A Page
 
 Welcome! This guide shows you how to view and update documentation easily — no Git or local setup required.
 
 👉 Found something outdated? Fix it in seconds using the steps below.
+
+---
+## 👥 Who is this for?
+
+- Users who want to improve or update documentation
+- Anyone who prefers a simple, browser-based workflow
+- Anyone who is NOT looking to make any operational / visual / styling / technical changes to the site
 
 ---
 
@@ -15,15 +22,6 @@ Welcome! This guide shows you how to view and update documentation easily — no
 
 ---
 
-
-## 👥 Who is this for?
-
-- Analysts
-- Users who want to improve or update documentation
-- Anyone who prefers a simple, browser-based workflow
-
----
-
 ## 🎯 What you’ll achieve
 
 By the end of this guide, you will:
@@ -33,8 +31,6 @@ By the end of this guide, you will:
 - ✅ Understand how your changes go live  
 
 ---
-
-## 🟢 Recommended: Edit directly in the browser (no setup needed)
 
 ### ✏️ Go to the documentation site
 
@@ -65,20 +61,36 @@ By the end of this guide, you will:
 
 ### ✏️ Submit your update
 
-Scroll down and click **"Propose changes"**
+Scroll down and click **"Commit changes"**
+Keep the default option of 'Create a new branch...'
+You can ignore the commit description
+Click **"Propose changes"**
 
 👉 This will:
 
 - Automatically create a branch ✅  
-- Create a Pull Request (PR) ✅  
+- Take you to a Pull Request (PR) creation page ✅
+- Create a pre-populated PR template for you to fill (optionally) ✅
+- Although filling the PR description is not mandatory, we strongly recommend you write at least a short description of changes you are making  ✅
+
+Press **"Create PR"** button
 
 ---
 
-### ✅ What happens next
+### ✏️ What happens next
 
-- Let us handle the rest while you go and have a cuppa ☕ ✅ 
+- Let us handle the rest while you go and have a cuppa ☕ 
 
 ---
+
+### ✏️ Optional read: Behind the scenes
+
+- Once you create the PR, github workflow triggers
+- It runs a strict validation check to ensure your changes are not breaking anything
+- It does a rebase i.e. it moves the head to to the top of main branch
+- Then it merges the current PR to the main branch
+- Once merge is successful, it deletes the current branch. If needed, it can be restored within 30 days.
+- After that, it builds the site and publishes through github pages
 
 
 ## ✅ Don’t worry about making mistakes

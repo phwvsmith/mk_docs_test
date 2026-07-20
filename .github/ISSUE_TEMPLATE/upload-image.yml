@@ -1,0 +1,22 @@
+name: Upload Image
+description: Upload a screenshot for the Knowledge Hub
+title: "[UPLOAD] "
+labels:
+  - screenshot-upload
+
+body:
+  - type: textarea
+    id: image
+    attributes:
+      label: Image Data
+      description: Automatically populated.
+    validations:
+      required: true
+
+  - type: input
+    id: filename
+    attributes:
+      label: Filename
+    validations:
+      required: true
+      

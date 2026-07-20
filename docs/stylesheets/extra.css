@@ -11,6 +11,7 @@
 
   --radius: 10px;
   --shadow: 0 2px 6px rgba(0,0,0,0.06);
+  --header-height: 80px;
 }
 
 /* Map to Material theme */
@@ -52,8 +53,8 @@ body {
   font-weight: 700;
 
   position: sticky;
-  top: 80px;
-  z-index: 10;
+  top: var(--header-height);
+  z-index: 1;
 
   background: inherit;
   padding: 0.8rem 0;
@@ -71,7 +72,7 @@ body {
 
 .md-header {
   background: var(--phw-primary);
-  min-height: 80px;
+  min-height: var(--header-height);
   border-bottom: 4px solid var(--phw-accent);
 }
 
@@ -99,7 +100,11 @@ body {
 
 .md-main__inner { padding: 0 1.5rem; }
 
-.md-content { max-width: 1000px; }
+.md-content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .md-content__inner {
   margin-top: 0 !important;
@@ -170,10 +175,9 @@ body {
   box-shadow: var(--shadow);
 }
 
-.md-nav__link[href*="create"]:hover {
+.md-nav__link[href*="/new/main/docs/"]:hover {
   opacity: 0.9;
 }
-
 
 /* =====================================================
    ✅ EDIT BUTTON (LABELLED, SAFE)
@@ -182,8 +186,8 @@ body {
 /* Keep container clean – DO NOT touch opacity here */
 .md-content__button {
   position: sticky;
-  top: 85px;
-  z-index: 11;
+  top: calc(var(--header-height) + 5px);
+  z-index: 10;
 }
 
 /* Style the button itself */
@@ -211,10 +215,11 @@ body {
   fill: #ffffff !important;
 }
 
-/* ✅ Add label */
+/* ✅ Add label 
 .md-content__button.md-icon::after {
   content: "Edit This Page";
 }
+*/
 
 /* Hover state */
 .md-content__button.md-icon:hover {
@@ -338,7 +343,7 @@ body {
 /* Tab container */
 .md-tabs__list {
   display: flex;
-  align-items: left;        /* ✅ left items */
+  align-items: center;
   justify-content: flex-start;
   padding-left: 1rem;
   margin-left: 0;
@@ -425,44 +430,155 @@ body {
   text-decoration: underline;
 }
 
-/* =====================================================
-   ✅ BACK TO TOP (GLOBAL, NO USER ACTION REQUIRED)
-   ===================================================== */
 
 /* Create invisible anchor target */
 html {
   scroll-behavior: smooth;  /* ✅ smooth scroll */
 }
 
-/* Floating button */
-#back-to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
 
-  width: 40px;
-  height: 40px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background: var(--phw-accent);
-  color: #fff;
-
-  border-radius: 8px;
-  text-decoration: none;
-
-  font-size: 1.2rem;
-
-  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
-  opacity: 0.9;
-
-  z-index: 999;
+/* Hide edit button on admin-only pages */
+.admin-only-page {
+  display: none;
 }
 
-/* Hover */
-#back-to-top:hover {
-  opacity: 1;
-  transform: translateY(-2px);
+.md-content:has(.admin-only-page) .md-content__button {
+  display: none !important;
+}
+
+/* =====================================================
+   SEARCH
+   ===================================================== */
+
+.md-search__form {
+  background: var(--phw-primary-light) !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.md-search__input {
+  color: #ffffff !important;
+}
+
+.md-search__input::placeholder {
+  color: rgba(255,255,255,0.75) !important;
+}
+
+.md-search__icon {
+  color: #ffffff !important;
+}
+
+
+/* =====================================================
+   SEARCH HIGHLIGHT
+   ===================================================== */
+
+mark {
+  background-color: rgba(0, 164, 153, 0.15);
+  color: inherit;
+  border-radius: 3px;
+  padding: 0;
+}
+
+
+/* =====================================================
+   SEARCH LAYERING
+   ===================================================== */
+
+.md-search__inner {
+  z-index: 9999 !important;
+}
+
+.md-search__output {
+  position: absolute !important;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10000 !important;
+}
+
+.md-search__scrollwrap {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+
+/* =====================================================
+   SEARCH RESULTS
+   ===================================================== */
+
+.md-search-result__article {
+  padding: 12px 16px 12px 42px !important;
+
+  border-radius: 8px;
+  transition: all 0.15s ease;
+}
+
+.md-search-result__item {
+  margin-bottom: 8px;
+}
+
+
+/* ---------- LIGHT MODE ---------- */
+
+[data-md-color-scheme="default"] .md-search-result__article {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+[data-md-color-scheme="default"] .md-search-result__article:hover {
+  background: #f8fafc;
+  border-color: var(--phw-accent);
+}
+
+
+/* ---------- DARK MODE ---------- */
+
+[data-md-color-scheme="slate"] .md-search-result__article {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+[data-md-color-scheme="slate"] .md-search-result__article:hover {
+  background: #243244;
+  border-color: var(--phw-accent);
+}
+
+
+/* Result title */
+
+.md-search-result__article h1 {
+  position: static !important;
+
+  font-size: 1rem !important;
+  font-weight: 600;
+
+  margin: 0 0 0.25rem 0 !important;
+  padding: 0 !important;
+
+  border-bottom: none !important;
+}
+
+[data-md-color-scheme="default"] .md-search-result__article h1 {
+  color: var(--phw-primary);
+}
+
+[data-md-color-scheme="slate"] .md-search-result__article h1 {
+  color: #e5e7eb;
+}
+
+
+/* Result description */
+
+.md-search-result__article p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+/* Document icon */
+
+.md-search-result__icon {
+  left: 14px;
+  top: 14px;
 }

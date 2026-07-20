@@ -1,4 +1,4 @@
-# Overview
+# School Health Research Network
 
 This section contains documentation related to analytical pipelines and dashboards for School Health Research Network
 ## Owner

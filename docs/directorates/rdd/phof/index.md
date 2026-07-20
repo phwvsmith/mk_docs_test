@@ -1,6 +1,6 @@
-# Overview
+# Public Health Outcomes Framework
 
-This section contains documentation related to Primary Health Outcome Framework analytical pipelines and related dashboards
+This section contains documentation related to Public Health Outcomes Framework analytical pipelines and related dashboards
 
 ## Owner
 

@@ -1,9 +1,14 @@
 ---
 title: Home
+admin-only: true
 hide:
   - navigation
   - toc
+search:
+  exclude: true
 ---
+
+<div class="admin-only-page"></div>
 
 # 🧭 NDAP Knowledge Hub
 
@@ -31,6 +36,4 @@ Welcome to the central documentation hub for the National Data and Analytics Pla
 </a>
 
 </div>
-
-<a id="back-to-top" href="#">↑</a>
 

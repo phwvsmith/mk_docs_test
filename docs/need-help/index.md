@@ -10,7 +10,7 @@ This section helps you quickly resolve common issues when editing or contributin
 
 If you're trying to update content:
 
-👉 Go to the **Editing Guide** for step-by-step instructions.
+👉 Go to the [Editing Guide](https://literate-adventure-1qywq3r.pages.github.io/getting-started/editing-guide/) for step-by-step instructions.
 
 ---
 
@@ -23,7 +23,7 @@ If something didn’t work as expected, check here first:
 - ✅ Merge conflicts when multiple people edit  
 - ✅ Formatting looks incorrect  
 
-👉 See: **Common Issues**
+👉 See: [Common Issues & Troubleshooting](https://literate-adventure-1qywq3r.pages.github.io/need-help/troubleshooting/)
 
 ---
 
@@ -35,7 +35,7 @@ Need help making your content look right?
 - Code blocks and tables  
 - Tips and notes styling  
 
-👉 See: **Formatting Guide**
+👉 See: [Formatting Guide](https://literate-adventure-1qywq3r.pages.github.io/need-help/formatting-guideline/)
 
 ---
 
@@ -43,7 +43,7 @@ Need help making your content look right?
 
 Not sure how to structure your page or what to include?
 
-👉 See: **Content Guidelines**
+👉 See: [Content Guidelines](https://literate-adventure-1qywq3r.pages.github.io/need-help/content-guideline/)
 
 ---
 
@@ -51,7 +51,7 @@ Not sure how to structure your page or what to include?
 
 Having trouble adding images or files?
 
-👉 See: **Images and Files**
+👉 See: [Images and Files](https://literate-adventure-1qywq3r.pages.github.io/need-help/images-and-files/)
 
 ---
 
@@ -59,8 +59,8 @@ Having trouble adding images or files?
 
 If you couldn’t find your answer:
 
-👉 Check the **FAQ**  
-👉 Or reach out via **Who to Contact**
+👉 Check the [FAQ](https://literate-adventure-1qywq3r.pages.github.io/need-help/FAQ/)  
+👉 Or reach out via [Contact Us](https://literate-adventure-1qywq3r.pages.github.io/need-help/Who-to-contact/)
 
 ---
 

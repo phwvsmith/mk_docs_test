@@ -1,4 +1,4 @@
-# Editing and Adding Pages
+# How To: Editing and Adding Pages
 
 This page provides a quick guide for updating and adding content on the site.
 
@@ -6,92 +6,43 @@ For detailed editing instructions, see the [Getting Started](https://literate-ad
 
 ---
 
-## ✏️ Editing an Existing Page
+## Editing an Existing Page
 
 To update content:
 
 1. Open the page you want to edit  
 2. Click the **Edit** button (top right)  
 3. Make your changes  
-4. Click **Commit changes**  
+4. Click **Commit changes** (you can ignore the description here).
+5. Select the 'Create new branch...' option.
+6. A PR page will open. Fill in a short description of changes (optionally) and click **Create Pull Request**
 
 ✅ Your update will be processed and published automatically  
 
 ---
 
-## ➕ Adding a New Page
+## Adding a New Page
 
-### Step 1: Go to the repository
-
-- Navigate to the GitHub repository  
-- Go to the folder where your page should live (e.g. `docs/` or a subfolder)  
-
----
-
-### Step 2: Create a new file
-
-- Click **Add file → Create new file**  
-- Give it a name ending with `.md`  
-
-Example:
-
-new-page.md
+1. Click on the **Add A Page** button and click on the link **Create New Page**
+2. It will take you to the Git repo. Change the file name at the top.
+3. Write the contents.
+4. Click **Commit changes** (you can ignore the description here).
+5. Select the 'Create new branch...' option.
+6. A PR page will open. Fill in a short description of changes (optionally) and click **Create Pull Request**
+7. Locate the `.pages` file in the same folder  
+8. Open it using the **Edit** button  
+9. Add your page under the navigation section
+10. Raise another PR following same pattern.
 
 ---
 
-### Step 3: Add content
+## Updating vs Creating a Page
 
-Start with a simple structure:
-
-# Page Title
-
-## Overview
-
-Brief description of the topic.
-
-## Content
-
-Add your main content here.
-
----
-
-### Step 4: Commit your changes
-
-- Scroll down  
-- Click **Commit changes**  
-
-✅ Your page will be added and published automatically  
-
----
-
-## 🧭 Adding the Page to Navigation
-
-To make your page visible in the site menu:
-
-1. Locate the `.pages` file in the same folder  
-2. Open it using the **Edit** button  
-3. Add your page under the navigation section  
-
-Example:
-
-title: Section Name
-nav:
-  - Existing Page: existing.md
-  - New Page: new-page.md
-
-4. Commit the changes  
-
-✅ Your page will now appear in the site navigation  
-
----
-
-## 📝 Updating vs Creating a Page
-
-### ✅ Edit an existing page if:
+**Edit an existing page if:**
 - The topic already exists  
 - You are improving or updating content  
 
-### ✅ Create a new page if:
+**Create a new page if:**
 - The topic is new  
 - The content would make an existing page too long  
 
@@ -99,10 +50,10 @@ nav:
 
 ## ⚠️ Tips
 
-✅ Use clear and descriptive page names  
-✅ Place the file in the correct folder  
-✅ Update navigation so others can find it  
-✅ Follow the Formatting Guide for consistency  
+1. Use clear and descriptive page names  
+2. Place the file in the correct folder  
+3. Update navigation so others can find it  
+4. Follow the Formatting Guide for consistency  
 
 ---
 

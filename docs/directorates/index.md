@@ -1,9 +1,10 @@
 ---
 hide:
   - navigation
+  - toc
 ---
 
-
+<div class="admin-only-page"></div>
 # 🧭 Your Directorate
 
 Explore documentation by directorate.
@@ -24,8 +25,3 @@ Explore documentation by directorate.
 
 ---
 
-## 💡 Tip
-
-Each directorate maintains its own documentation.  
-Click a card to explore their content.
-test.

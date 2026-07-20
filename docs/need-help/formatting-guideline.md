@@ -4,12 +4,15 @@ This site uses **Markdown** for writing content.
 You don’t need any technical background—just follow these simple patterns.
 
 ---
+## Page Title 
 
-## 📌 Headings
+Use once per page
+
+## Headings
 
 Use headings to organise your content clearly.
 
-# Page Title (use once per page)
+
 
 ## Section Heading
 
@@ -47,6 +50,7 @@ This is another paragraph.
 3. Step three
 
 ✅ Use lists instead of long paragraphs  
+✅ For detailed guidelines : [How to add lists in markdown](https://www.markdownlang.com/cheatsheet/lists.html)
 
 ---
 
@@ -99,6 +103,7 @@ Example:
 | Sam  | Engineer |
 
 ✅ Keep tables simple and aligned  
+✅ For detailed guidelines: [Adding tables in Markdown](https://www.markdownlang.com/extended/tables.html)
 
 ---
 
