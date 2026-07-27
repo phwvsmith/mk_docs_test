@@ -6,9 +6,6 @@ The NDAP (National Data Analytics Platform) architecture is designed as a cloud-
 
 The proposed high level architecture of NDAP is pictured below:
 
-
-![image](images/ndap_arch.png)
-
 ## Platform Layers
 
 The platform is organized into four logical layers:
