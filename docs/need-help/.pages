@@ -1,8 +1,7 @@
 title: Need Help?
 
 nav:
-  - Overview: index.md
-  - How-To: how-to-edit-and-add-pages.md
+  - Introduction: index.md
   - Common Issues and Solutions: troubleshooting.md
   - Formatting Guide: formatting-guideline.md
   - Content Guide: content-guideline.md
