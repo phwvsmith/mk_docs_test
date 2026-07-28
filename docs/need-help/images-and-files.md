@@ -117,13 +117,3 @@ Before saving your page:
 
 If something doesn’t display correctly, it’s usually due to the file path or file name.  
 Double-check both before committing changes.
-
-test:
-<img width="659" height="338" alt="image" src="https://github.com/user-attachments/assets/26df43fc-2908-48dd-80cb-7dc066d1bdb2" />
-
-test2:
-<img width="206" height="136" alt="image" src="https://github.com/user-attachments/assets/7ec73623-01a6-49a1-87dc-32f3c8cdc2ff" />
-
-test3: 
-<img width="130" height="62" alt="image" src="https://github.com/user-attachments/assets/329d6398-a0f1-42b8-87b9-20c79d8a11b9" />
-
