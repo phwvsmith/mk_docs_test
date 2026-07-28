@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://Public-Health-Wales.github.io/ndap_central_doc_repo/data-engineering/architecture/">
+        <link rel="canonical" href="https://Public-Health-Wales.github.io/ndap_central_doc_repo/data-engineering/CI-CD%20Process/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../R-common/">
       
       
-        <link rel="next" href="../R-common/">
+        <link rel="next" href="../standards/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>NDAP Platform Architecture Overview - National Data & Analytics Platform Knowledge Hub</title>
+        <title>NDAP CI/CD Process Overview - National Data & Analytics Platform Knowledge Hub</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ndap-platform-architecture-overview" class="md-skip">
+        <a href="#ndap-cicd-process-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NDAP Platform Architecture Overview
+              NDAP CI/CD Process Overview
             
           </span>
         </div>
@@ -617,37 +617,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    NDAP Platform Architecture Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -663,563 +636,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Introduction
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platform-layers" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Platform Layers
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Platform Layers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#development-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Development Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Development Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Components
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#source-code-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Source Code Repository
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consumer-analytics-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Consumer Analytics Layer
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-benefits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Benefits
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integration-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Integration Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Integration Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#components_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Components
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#github-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub Actions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub Actions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#responsibilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Responsibilities
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#terraform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Terraform
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Terraform">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#responsibilities_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Responsibilities
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#artifact-registry" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Artifact Registry
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Artifact Registry">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#stored-assets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stored Assets
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#benefits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benefits
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-observability-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security &amp; Observability Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Security &amp; Observability Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#security-access-policies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security &amp; Access Policies
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-coding-standards" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data &amp; Coding Standards
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Data &amp; Coding Standards">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#data-standards" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Standards
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development-standards" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Development Standards
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#google-cloud-platform-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Google Cloud Platform Environment
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Google Cloud Platform Environment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Run Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Run Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cloud-scheduler" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Scheduler
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-run" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Run
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Data Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bigquery" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BigQuery
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="BigQuery">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Functions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-storage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Storage
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cloud Storage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#typical-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Typical Usage
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dataplex" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dataplex
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Dataplex">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#functions_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Functions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Security Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#iam-pam" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IAM &amp; PAM
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-logging" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Logging
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cloud Logging">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#captured-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Captured Information
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#end-to-end-workflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        End-to-End Workflow
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#architectural-principles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Architectural Principles
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1257,10 +673,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../CI-CD%20Process/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NDAP CI/CD Process Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1276,6 +719,603 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#operating-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Operating Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executive-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Executive Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#business-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Business Context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture Objectives
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-principles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architectural Principles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#platform-architecture-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform Architecture Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Platform Architecture Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regional-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regional Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Projects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Projects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-segregation-bw-application-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benefits of Segregation b/w application &amp; data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository-naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repository Naming Convention
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branching-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branching Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Branching Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-request-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull Request Governance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pull Request Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature → Dev
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dev → Main
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development Lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-process-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI/CD Process Diagram
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI/CD Process Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-platform-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared Platform Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        deploy.yml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secret-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secret Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-deployment-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared Deployment Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-of-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sequence of Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-execution-sequence-file-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Runtime Execution Sequence (File Level)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Runtime Execution Sequence (File Level)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setupsh-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setup.sh Responsibilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run_r_scriptsh-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        run_R_script.sh Responsibilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate_locksh-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        generate_lock.sh Responsibilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensitive-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensitive Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-sensitive-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-Sensitive Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-team-operating-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Team Operating Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-state-assessment-phase-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current State Assessment (Phase 1)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-state-architecture-phase-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Target State Architecture (Phase 2)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Target State Architecture (Phase 2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-platform-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2 Platform Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-run-execution-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Run Execution Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#share-nothing-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Share-Nothing Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immutable-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immutable Deployments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategic-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strategic Outcome
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2646,10 +2686,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#operating-model" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Introduction
+        Operating Model
       
     </span>
   </a>
@@ -2657,503 +2697,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#platform-layers" class="md-nav__link">
+  <a href="#executive-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Platform Layers
+        Executive Summary
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Platform Layers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#development-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Development Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Development Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#components" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Components
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#source-code-repository" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Source Code Repository
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#consumer-analytics-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Consumer Analytics Layer
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-benefits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Benefits
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#integration-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Integration Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Integration Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#components_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Components
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Components">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#github-actions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        GitHub Actions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="GitHub Actions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#responsibilities" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Responsibilities
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#terraform" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Terraform
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Terraform">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#responsibilities_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Responsibilities
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#artifact-registry" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Artifact Registry
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Artifact Registry">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#stored-assets" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Stored Assets
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#benefits" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Benefits
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-observability-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security &amp; Observability Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Security &amp; Observability Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#security-access-policies" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security &amp; Access Policies
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-coding-standards" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data &amp; Coding Standards
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Data &amp; Coding Standards">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#data-standards" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Standards
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development-standards" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Development Standards
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#google-cloud-platform-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Google Cloud Platform Environment
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Google Cloud Platform Environment">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#run-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Run Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Run Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cloud-scheduler" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Scheduler
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-run" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Run
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Data Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#bigquery" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BigQuery
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="BigQuery">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Functions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-storage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Storage
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cloud Storage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#typical-usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Typical Usage
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dataplex" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Dataplex
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Dataplex">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#functions_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Functions
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-layer" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Layer
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Security Layer">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#iam-pam" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        IAM &amp; PAM
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cloud-logging" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cloud Logging
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cloud Logging">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#captured-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Captured Information
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#end-to-end-workflow" class="md-nav__link">
+  <a href="#business-context" class="md-nav__link">
     <span class="md-ellipsis">
       
-        End-to-End Workflow
+        Business Context
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture Objectives
       
     </span>
   </a>
@@ -3172,13 +2741,524 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
+  <a href="#platform-architecture-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Summary
+        Platform Architecture Overview
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Platform Architecture Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regional-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regional Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Projects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Projects
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#benefits-of-segregation-bw-application-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benefits of Segregation b/w application &amp; data
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repository-naming-convention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Repository Naming Convention
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branching-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branching Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Branching Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Branch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-request-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull Request Governance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pull Request Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#feature-dev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Feature → Dev
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev-main" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dev → Main
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#development-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Development Lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cicd-process-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CI/CD Process Diagram
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CI/CD Process Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-platform-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared Platform Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deployment Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployment Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deployyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        deploy.yml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secret-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secret Selection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shared-deployment-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared Deployment Workflow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-of-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sequence of Events
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-execution-sequence-file-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Runtime Execution Sequence (File Level)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Runtime Execution Sequence (File Level)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setupsh-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        setup.sh Responsibilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run_r_scriptsh-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        run_R_script.sh Responsibilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generate_locksh-responsibilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        generate_lock.sh Responsibilities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sensitive-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensitive Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#non-sensitive-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Non-Sensitive Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Controls
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-team-operating-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Team Operating Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-state-assessment-phase-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current State Assessment (Phase 1)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#target-state-architecture-phase-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Target State Architecture (Phase 2)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Target State Architecture (Phase 2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vision
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-platform-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 2 Platform Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-run-execution-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Run Execution Model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#share-nothing-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Share-Nothing Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#immutable-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immutable Deployments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategic-outcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strategic Outcome
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3247,7 +3327,7 @@
 
 
   
-    <a href="https://github.com/Public-Health-Wales/ndap_central_doc_repo/edit/main/docs/data-engineering/architecture.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Public-Health-Wales/ndap_central_doc_repo/edit/main/docs/data-engineering/CI-CD Process.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -3255,240 +3335,541 @@
   
 
 
-<h1 id="ndap-platform-architecture-overview">NDAP Platform Architecture Overview</h1>
-<h2 id="introduction">Introduction</h2>
-<p>The NDAP (National Data Analytics Platform) architecture is designed as a cloud-native, automated, and governed analytics platform built on Google Cloud Platform (GCP). The architecture emphasizes Infrastructure as Code (IaC), DevOps automation, secure data management, and self-service analytics through modern reporting tools.</p>
-<p>The proposed high level architecture of NDAP is pictured below:</p>
-<h2 id="platform-layers">Platform Layers</h2>
-<p>The platform is organized into four logical layers:</p>
-<ol>
-<li>Development Layer</li>
-<li>Integration Layer</li>
-<li>Security &amp; Observability Layer</li>
-<li>Google Cloud Platform Runtime Environment</li>
-</ol>
+<h1 id="ndap-cicd-process-overview">NDAP CI/CD Process Overview</h1>
+<h2 id="operating-model">Operating Model</h2>
+<p><strong>Version:</strong> 2.0<br />
+<strong>Status:</strong> Current State (Phase 1) with Future State (Phase 2) Roadmap<br />
+<strong>Platform:</strong> Google Cloud Platform (GCP)<br />
+<strong>Primary Language:</strong> R<br />
+<strong>Region:</strong> europe-west2 (London)<br />
+<strong>Source Control:</strong> GitHub  </p>
 <hr />
-<h3 id="development-layer">Development Layer</h3>
-<p>The Development Layer provides the foundation for collaborative software development, infrastructure management, and analytics enablement.</p>
-<h4 id="components">Components</h4>
-<h5 id="source-code-repository">Source Code Repository</h5>
-<p>The platform source code is maintained using:</p>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>The NDAP Research and Development Directorate (RDD) Application Platform provides a standardised Continuous Integration and Continuous Deployment (CI/CD) framework for the development, testing, deployment and execution of R-based analytical workloads on Google Cloud Platform (GCP).</p>
+<p>The platform enables analytical teams to focus on developing business logic and statistical methodology whilst deployment, runtime orchestration and infrastructure management are increasingly standardised and automated.</p>
+<p>The current Phase 1 implementation provides:</p>
 <ul>
-<li>GitHub</li>
-<li>Visual Studio Code (VS Code)</li>
+<li>Standardised GitHub repository structures</li>
+<li>Automated CI/CD pipelines</li>
+<li>Controlled promotion through Development and Production environments</li>
+<li>Reproducible R environments through <code>renv</code></li>
+<li>Automated deployment using GitHub Actions</li>
+<li>Runtime execution through Vertex AI Workbench</li>
+<li>Configuration-driven deployments</li>
+<li>Shared reusable deployment workflows</li>
 </ul>
-<p>This repository contains:</p>
+<p>The future Phase 2 evolution transitions the platform towards a centrally managed Platform Engineering model built around:</p>
 <ul>
-<li>Data pipeline code</li>
-<li>Infrastructure-as-Code definitions</li>
-<li>Deployment configurations</li>
-<li>Scheduling definitions</li>
-<li>Analytics application code</li>
+<li>Containerisation</li>
+<li>Artifact Registry</li>
+<li>Cloud Run Jobs</li>
+<li>Cloud Scheduler</li>
+<li>Workload Identity Federation</li>
+<li>Golden runtime images</li>
+<li>Thin application repositories</li>
 </ul>
-<h5 id="consumer-analytics-layer">Consumer Analytics Layer</h5>
-<p>Business users consume analytical outputs through:</p>
-<ul>
-<li>Microsoft Power BI</li>
-<li>R</li>
-<li>Shiny Applications</li>
-</ul>
-<p>These tools provide dashboards, reports, and advanced analytical capabilities based on data processed within the NDAP platform.</p>
-<h4 id="key-benefits">Key Benefits</h4>
-<ul>
-<li>Version-controlled development</li>
-<li>Collaborative engineering workflows</li>
-<li>Automated deployment pipelines</li>
-<li>Traceability and auditability</li>
-<li>Support for both analysts and technical users</li>
-</ul>
+<p>This transition will significantly reduce operational overhead, minimise platform drift, improve scalability and reduce infrastructure costs through a fully serverless, pay-per-use architecture.</p>
 <hr />
-<h3 id="integration-layer">Integration Layer</h3>
-<p>The Integration Layer automates platform provisioning, application deployment, and operational workflows.</p>
-<h4 id="components_1">Components</h4>
-<p>This layer is made up of the below components:</p>
-<h5 id="github-actions">GitHub Actions</h5>
-<p>GitHub Actions serves as the Continuous Integration / Continuous Deployment (CI/CD) engine.</p>
-<h6 id="responsibilities">Responsibilities</h6>
+<h2 id="business-context">Business Context</h2>
+<p>Multiple RDD teams develop and operate analytical products that transform, process and publish public health data.</p>
+<p>Historically, analytical applications have required bespoke deployment approaches, operational processes and runtime environments. This creates challenges around:</p>
 <ul>
-<li>Code validation</li>
-<li>Automated testing</li>
-<li>Build automation</li>
-<li>Deployment orchestration</li>
-<li>Artifact publishing</li>
+<li>Consistency</li>
+<li>Reproducibility</li>
+<li>Supportability</li>
+<li>Security</li>
+<li>Cost optimisation</li>
 </ul>
-<p>When developers commit changes to GitHub, GitHub Actions automatically initiates deployment workflows.</p>
-<h5 id="terraform">Terraform</h5>
-<p>Terraform is used as the Infrastructure as Code (IaC) framework.</p>
-<h6 id="responsibilities_1">Responsibilities</h6>
+<p>The NDAP RDD CI/CD Platform addresses these challenges through the introduction of a common deployment architecture that can be reused across all analytical teams.</p>
+<p>Examples include:</p>
 <ul>
-<li>Provision GCP infrastructure</li>
-<li>Manage cloud resources</li>
-<li>Maintain infrastructure consistency</li>
-<li>Enable repeatable deployments</li>
-</ul>
-<p>Terraform definitions are stored alongside source code and executed through GitHub Actions pipelines.</p>
-<h5 id="artifact-registry">Artifact Registry</h5>
-<p>Artifact Registry acts as the central repository for deployment artifacts.</p>
-<h6 id="stored-assets">Stored Assets</h6>
-<ul>
-<li>Container images</li>
-<li>Runtime packages</li>
-<li>Application artefacts</li>
-</ul>
-<p>Artifacts produced during CI/CD processes are published here before deployment into runtime services.</p>
-<h4 id="benefits">Benefits</h4>
-<ul>
-<li>Version control of deployable assets</li>
-<li>Secure package management</li>
-<li>Controlled promotion across environments</li>
+<li>RDD PHOF</li>
+<li>RDD PCC</li>
+<li>RDD SHRN</li>
+<li>Future RDD analytical teams</li>
 </ul>
 <hr />
-<h3 id="security-observability-layer">Security &amp; Observability Layer</h3>
-<p>The Security &amp; Observability Layer provides governance, compliance, and operational controls across the platform.</p>
-<h4 id="security-access-policies">Security &amp; Access Policies</h4>
-<p>Security policies define:</p>
-<ul>
-<li>Role-based access control (RBAC)</li>
-<li>Principle of least privilege</li>
-<li>Data access controls</li>
-<li>Environment segregation</li>
-<li>Compliance requirements</li>
-</ul>
-<p>These policies govern both user activities and service-to-service interactions.</p>
-<h4 id="data-coding-standards">Data &amp; Coding Standards</h4>
-<p>The platform operates under established standards covering:</p>
-<h5 id="data-standards">Data Standards</h5>
-<ul>
-<li>Data modelling</li>
-<li>Metadata management</li>
-<li>Data quality</li>
-<li>Naming conventions</li>
-<li>Lifecycle management</li>
-</ul>
-<h5 id="development-standards">Development Standards</h5>
-<ul>
-<li>Code quality</li>
-<li>Testing requirements</li>
-<li>DevOps practices</li>
-<li>Documentation standards</li>
-</ul>
-<p>These standards ensure platform consistency, maintainability, and regulatory compliance.</p>
-<hr />
-<h3 id="google-cloud-platform-environment">Google Cloud Platform Environment</h3>
-<p>The runtime environment hosts all operational components of the NDAP platform within Google Cloud.</p>
-<hr />
-<h4 id="run-layer">Run Layer</h4>
-<p>The Run Layer contains services responsible for executing workloads.</p>
-<h5 id="cloud-scheduler">Cloud Scheduler</h5>
-<p>Cloud Scheduler provides:</p>
-<ul>
-<li>Scheduled execution of pipelines</li>
-<li>Time-based orchestration</li>
-<li>Automated workflow triggering</li>
-</ul>
-<p>Typical use cases include:</p>
-<ul>
-<li>Daily data ingestion</li>
-<li>Periodic reporting refreshes</li>
-<li>Scheduled analytical processing</li>
-</ul>
-<h5 id="cloud-run">Cloud Run</h5>
-<p>Cloud Run hosts containerized services that perform:</p>
-<ul>
-<li>Data processing</li>
-<li>APIs</li>
-<li>Scheduled workloads</li>
-<li>Business logic execution</li>
-</ul>
-<p>Applications are deployed from images stored in Artifact Registry.</p>
-<hr />
-<h4 id="data-layer">Data Layer</h4>
-<p>The Data Layer provides storage, analytics, and governance capabilities.</p>
-<h5 id="bigquery">BigQuery</h5>
-<p>BigQuery serves as the primary analytical data warehouse.</p>
-<h6 id="functions">Functions</h6>
-<ul>
-<li>Data storage</li>
-<li>Data transformation</li>
-<li>Advanced analytics</li>
-<li>Reporting datasets</li>
-<li>Query execution</li>
-</ul>
-<h5 id="cloud-storage">Cloud Storage</h5>
-<p>Cloud Storage provides scalable object storage.</p>
-<h6 id="typical-usage">Typical Usage</h6>
-<ul>
-<li>Raw data landing zones</li>
-<li>File-based ingestion</li>
-<li>Intermediate processing outputs</li>
-<li>Archival datasets</li>
-</ul>
-<h5 id="dataplex">Dataplex</h5>
-<p>Dataplex provides data governance and metadata management across the platform.</p>
-<h6 id="functions_1">Functions</h6>
-<ul>
-<li>Data discovery</li>
-<li>Governance</li>
-<li>Metadata management</li>
-<li>Data quality oversight</li>
-<li>Data domain organisation</li>
-</ul>
-<p>Together, these services form a governed enterprise data platform.</p>
-<hr />
-<h3 id="security-layer">Security Layer</h3>
-<p>The Security Layer secures platform operations and supports monitoring.</p>
-<h4 id="iam-pam">IAM &amp; PAM</h4>
-<p>Identity and Access Management (IAM) and Privileged Access Management (PAM) provide:</p>
-<ul>
-<li>User authentication</li>
-<li>Service account management</li>
-<li>Access governance</li>
-<li>Privileged access control</li>
-</ul>
-<h4 id="cloud-logging">Cloud Logging</h4>
-<p>Cloud Logging provides centralized observability.</p>
-<h5 id="captured-information">Captured Information</h5>
-<ul>
-<li>Application logs</li>
-<li>Infrastructure logs</li>
-<li>Audit logs</li>
-<li>Security events</li>
-<li>Operational telemetry</li>
-</ul>
-<p>This enables monitoring, troubleshooting, incident response, and compliance reporting.</p>
-<hr />
-<h2 id="end-to-end-workflow">End-to-End Workflow</h2>
-<p>The typical platform workflow operates as follows:</p>
-<ol>
-<li>Developers create or update code in GitHub using VS Code.</li>
-<li>GitHub Actions automatically executes CI/CD pipelines.</li>
-<li>Terraform provisions or updates cloud infrastructure.</li>
-<li>Build artefacts are published to Artifact Registry.</li>
-<li>Cloud Run workloads are deployed from the registered artefacts.</li>
-<li>Cloud Scheduler triggers workloads according to defined schedules.</li>
-<li>Data is ingested and processed within Cloud Storage and BigQuery.</li>
-<li>Dataplex governs datasets and metadata across the data estate.</li>
-<li>IAM and PAM enforce security and access controls.</li>
-<li>Cloud Logging captures operational and audit information.</li>
-<li>Curated datasets are consumed through Power BI, R, and Shiny dashboards for analytics and reporting.</li>
-</ol>
+<h2 id="architecture-objectives">Architecture Objectives</h2>
+<p>The platform has been designed to achieve the following objectives.</p>
+<p><strong>Standardisation</strong></p>
+<p>Enable all RDD teams to follow a common deployment pattern.</p>
+<p><strong>Automation</strong></p>
+<p>Eliminate manual deployment activities wherever possible.</p>
+<p><strong>Security</strong></p>
+<p>Provide controlled access, environment segregation and secure deployment pathways.</p>
+<p><strong>Reproducibility</strong></p>
+<p>Ensure analytical code executes consistently between environments.</p>
+<p><strong>Scalability</strong></p>
+<p>Allow new teams to onboard without creating new infrastructure patterns.</p>
+<p><strong>Cost Efficiency</strong></p>
+<p>Reduce operational costs through shared architecture and reusable tooling.</p>
+<p><strong>Maintainability</strong></p>
+<p>Centralise common functionality and minimise duplicated engineering effort.</p>
 <hr />
 <h2 id="architectural-principles">Architectural Principles</h2>
-<p>The NDAP architecture is built around the following principles:</p>
+<p><strong>Principle 1 — Everything is Version Controlled</strong></p>
+<p>All application code, workflow definitions and deployment artefacts originate from Git repositories.</p>
+<hr />
+<p><strong>Principle 2 — Production Must Be Earned</strong></p>
+<p>Every deployment must progress through controlled promotion stages before reaching Production.</p>
+<hr />
+<p><strong>Principle 3 — Automate Everything Possible</strong></p>
+<p>Deployments, validation steps and runtime provisioning should be automated wherever practical.</p>
+<hr />
+<p><strong>Principle 4 — Shared Components Belong to the Platform</strong></p>
+<p>Common deployment functionality should be centrally maintained rather than duplicated across repositories.</p>
+<hr />
+<p><strong>Principle 5 — Runtime Environments Must Be Reproducible</strong></p>
+<p>Applications should execute using deterministic runtime configurations.</p>
+<hr />
+<p><strong>Principle 6 — Isolation Reduces Risk</strong></p>
+<p>Workloads should be separated wherever possible to minimise blast radius.</p>
+<hr />
+<h2 id="platform-architecture-overview">Platform Architecture Overview</h2>
+<h3 id="environment-architecture">Environment Architecture</h3>
+<h4 id="regional-deployment">Regional Deployment</h4>
+<p>All environments are deployed within: GCP Region <strong>europe-west2(London)</strong></p>
+<h4 id="projects">Projects</h4>
+<p>GCP projects are divided in two planes: Application &amp; Data, which are further divided into two environments: Development &amp; Production</p>
+<h5 id="application-projects">Application Projects</h5>
+<p>ndr-tr-phw-app-dev (Development)</p>
+<p>ndr-tr-phw-app-prod (Production)</p>
+<p><strong>Responsibilities include</strong>:</p>
 <ul>
-<li><strong>Cloud-native design</strong> using managed GCP services.</li>
-<li><strong>Infrastructure as Code</strong> through Terraform.</li>
-<li><strong>DevSecOps automation</strong> with GitHub Actions.</li>
-<li><strong>Centralized governance</strong> using Dataplex and organisational policies.</li>
-<li><strong>Secure-by-design access controls</strong> via IAM and PAM.</li>
-<li><strong>Scalable analytics</strong> using BigQuery.</li>
-<li><strong>Reusable containerized workloads</strong> running on Cloud Run.</li>
-<li><strong>Comprehensive observability</strong> through Cloud Logging.</li>
-<li><strong>Business self-service analytics</strong> via Power BI, R, and Shiny.</li>
+<li>Deployment artefacts</li>
+<li>Runtime execution</li>
+<li>Vertex AI infrastructure</li>
+<li>Application orchestration</li>
 </ul>
 <hr />
-<h2 id="summary">Summary</h2>
-<p>The NDAP Platform Architecture establishes a secure, scalable, and automated data analytics ecosystem on Google Cloud. The platform combines modern DevOps practices, governed data management, cloud-native compute services, and enterprise-grade security controls to support the full lifecycle of data ingestion, transformation, analytics, and reporting.</p>
+<h5 id="data-projects">Data Projects</h5>
+<p>ndr-tr-phw-dp-dev (Development)</p>
+<p>ndr-tr-phw-dp-prod (Production)</p>
+<p><strong>Responsibilities include</strong>:</p>
+<ul>
+<li>Dataset storage</li>
+<li>Table management</li>
+<li>Data processing</li>
+<li>Analytical outputs</li>
+</ul>
+<hr />
+<h5 id="benefits-of-segregation-bw-application-data">Benefits of Segregation b/w application &amp; data</h5>
+<p><strong>Reduced Blast Radius</strong></p>
+<p>Compromise or failure of application services does not automatically compromise data storage environments.</p>
+<p><strong>Improved Security</strong></p>
+<p>Different IAM policies may be applied to application and data layers.</p>
+<p><strong>Operational Isolation</strong></p>
+<p>Application changes can occur independently of data platform changes.</p>
+<p><strong>Governance</strong></p>
+<p>Improves auditing and ownership of platform components.</p>
+<hr />
+<h2 id="repository-naming-convention">Repository Naming Convention</h2>
+<p>Repositories follow a common naming convention.</p>
+<p>ndap-app-rdd-<strong>repo or team name</strong></p>
+<p>Examples:</p>
+<p>ndap-app-rdd-phof</p>
+<p>ndap-app-rdd-pcc</p>
+<p>ndap-app-rdd-shrn</p>
+<p>This enables consistency and discoverability across the platform.</p>
+<hr />
+<h2 id="branching-strategy">Branching Strategy</h2>
+<p>The platform follows a simple promotion model.</p>
+<p>feature/*
+      |
+      v
+     dev
+      |
+      v
+    main</p>
+<hr />
+<h3 id="feature-branch">Feature Branch</h3>
+<p>Used for:</p>
+<ul>
+<li>Development</li>
+<li>Bug fixes</li>
+<li>Enhancements</li>
+<li>Refactoring</li>
+</ul>
+<p>Examples:</p>
+<p>feature/new-indicator
+feature/refactor-processing
+feature/bug-fix</p>
+<hr />
+<h3 id="development-branch">Development Branch</h3>
+<p>Purpose:</p>
+<ul>
+<li>Integration testing</li>
+<li>System testing</li>
+<li>End-to-end validation</li>
+</ul>
+<p>Deployment Target:</p>
+<p>ndr-tr-phw-app-dev</p>
+<hr />
+<h3 id="main-branch">Main Branch</h3>
+<p>Purpose:</p>
+<ul>
+<li>Production releases</li>
+</ul>
+<p>Deployment Target:</p>
+<p>ndr-tr-phw-app-prod</p>
+<hr />
+<h3 id="pull-request-governance">Pull Request Governance</h3>
+<p>Pull Requests are mandatory for branch promotion.</p>
+<h4 id="feature-dev">Feature → Dev</h4>
+<p>Requirements:</p>
+<ul>
+<li>Peer review</li>
+<li>Pull Request approval</li>
+<li>Successful deployment</li>
+<li>Validation of outputs</li>
+</ul>
+<hr />
+<h4 id="dev-main">Dev → Main</h4>
+<p>Requirements:</p>
+<ul>
+<li>Peer review</li>
+<li>Pull Request approval</li>
+<li>Successful development validation</li>
+<li>Release acceptance</li>
+</ul>
+<hr />
+<h2 id="development-lifecycle">Development Lifecycle</h2>
+<p><strong>Step 1 – Build</strong></p>
+<p>Analysts develop R code using:</p>
+<ul>
+<li>Visual Studio Code</li>
+<li>Google Cloud SDK</li>
+<li>Development GCP resources</li>
+</ul>
+<hr />
+<p><strong>Step 2 – Commit</strong></p>
+<p>Changes are committed into a feature branch.</p>
+<hr />
+<p><strong>Step 3 – Review</strong></p>
+<p>Pull Request raised into Dev branch.</p>
+<hr />
+<p><strong>Step 4 – Deploy to Development</strong></p>
+<p>CI/CD pipeline automatically deploys the solution.</p>
+<hr />
+<p><strong>Step 5 – Validate</strong></p>
+<p>Outputs are reviewed and validated.</p>
+<p>Validation approaches vary by team:</p>
+<ul>
+<li>Full E2E runs</li>
+<li>Workflow dispatch controlled runs</li>
+<li>Targeted validation activities</li>
+</ul>
+<hr />
+<p><strong>Step 6 – Promote to Production</strong></p>
+<p>Changes are promoted through a Pull Request into Main.</p>
+<hr />
+<p><strong>Step 7 – Deploy to Production</strong></p>
+<p>Automated deployment executes against Production resources.</p>
+<hr />
+<h2 id="cicd-process-diagram">CI/CD Process Diagram</h2>
+<p><img alt="NDAP-CICD-Process_Diagram" src="../images/ndap_cicd_process.png" /></p>
+<p>The CI/CD framework consists of:</p>
+<h3 id="application-repository">Application Repository</h3>
+<p>Owns:</p>
+<ul>
+<li>Business logic</li>
+<li>R code</li>
+<li>Configuration</li>
+<li>Package requirements</li>
+</ul>
+<hr />
+<h3 id="shared-platform-repository">Shared Platform Repository</h3>
+<p>Repository:</p>
+<p>Public-Health-Wales/ndap-rdd-app-reusable-cicd</p>
+<p>Owns:</p>
+<ul>
+<li>Deployment logic</li>
+<li>Runtime orchestration</li>
+<li>Common CI/CD activities</li>
+</ul>
+<p>This prevents duplication across analytical teams.</p>
+<hr />
+<h2 id="deployment-workflow">Deployment Workflow</h2>
+<h3 id="deployyml">deploy.yml</h3>
+<p>Acts as the orchestration layer.</p>
+<p>Capabilities:</p>
+<ul>
+<li>Automated deployment</li>
+<li>Workflow dispatch</li>
+<li>Environment selection</li>
+<li>Secret management</li>
+<li>Reusable workflow invocation</li>
+</ul>
+<hr />
+<h3 id="environment-selection">Environment Selection</h3>
+<p>main -&gt; Production</p>
+<p>all other deployment branches -&gt; Development</p>
+<hr />
+<h3 id="secret-selection">Secret Selection</h3>
+<p>Environment-specific GitHub Secrets are automatically passed to the shared deployment workflow.</p>
+<hr />
+<h3 id="shared-deployment-workflow">Shared Deployment Workflow</h3>
+<p>Repository:</p>
+<p>ndap-rdd-app-reusable-cicd</p>
+<p>Workflow:</p>
+<p>reusable-deploy.yml</p>
+<h3 id="sequence-of-events">Sequence of Events</h3>
+<p>Validate Inputs
+       |
+Authenticate
+       |
+Package Artefacts
+       |
+Upload Artefacts
+       |
+Stop Vertex Instance
+       |
+Update Metadata
+       |
+Restart Vertex Instance
+       |
+Trigger Runtime</p>
+<hr />
+<h3 id="runtime-execution-sequence-file-level">Runtime Execution Sequence (File Level)</h3>
+<p>Execution begins after the Vertex instance starts.</p>
+<p>Vertex Startup
+      |
+      v
+setup.sh
+      |
+      v
+run_R_script.sh
+      |
+      v
+Target R Script</p>
+<hr />
+<h4 id="setupsh-responsibilities">setup.sh Responsibilities</h4>
+<p>The startup script performs infrastructure validation.</p>
+<p>Responsibilities:</p>
+<ul>
+<li>Configure environment variables</li>
+<li>Initialise logging</li>
+<li>Validate artefact checksums</li>
+<li>Verify package existence</li>
+<li>Launch execution pipeline</li>
+</ul>
+<p>Calls:</p>
+<p>bash run_R_script.sh</p>
+<hr />
+<h4 id="run_r_scriptsh-responsibilities">run_R_script.sh Responsibilities</h4>
+<p>Responsible for runtime control.</p>
+<p>Functions include:</p>
+<ul>
+<li>Environment verification</li>
+<li>renv activation</li>
+<li>Lock file management</li>
+<li>R script invocation</li>
+</ul>
+<hr />
+<h4 id="generate_locksh-responsibilities">generate_lock.sh Responsibilities</h4>
+<p>Responsible for dependency management.</p>
+<p>Activities:</p>
+<ul>
+<li>Verify Conda environment</li>
+<li>Create environment if missing</li>
+<li>Install dependencies from packages.txt</li>
+<li>Generate renv.lock</li>
+</ul>
+<p>This guarantees reproducible package versions.</p>
+<hr />
+<h3 id="configuration-management">Configuration Management</h3>
+<h4 id="sensitive-configuration">Sensitive Configuration</h4>
+<p>Stored in: GitHub Secrets</p>
+<p>Examples:</p>
+<ul>
+<li>Service account credentials</li>
+<li>Authentication secrets</li>
+</ul>
+<hr />
+<h4 id="non-sensitive-configuration">Non-Sensitive Configuration</h4>
+<p>Stored within GCS-hosted configuration files.</p>
+<p>Examples:</p>
+<ul>
+<li>Dataset names</li>
+<li>Table names</li>
+<li>Bucket names</li>
+<li>Project names</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li>Environment portability</li>
+<li>Reduced code changes</li>
+<li>Easier operational management</li>
+</ul>
+<hr />
+<h3 id="security-controls">Security Controls</h3>
+<p><strong>Mandatory Peer Review</strong>: </p>
+<p>Required at:</p>
+<p>Feature -&gt; Dev
+Dev -&gt; Main</p>
+<hr />
+<p><strong>Environment Isolation</strong>: </p>
+<p>Development and Production operate independently.</p>
+<hr />
+<p><strong>Credential Segregation</strong>: </p>
+<p>Each environment uses dedicated credentials.</p>
+<hr />
+<p><strong>Controlled Deployment Path</strong>: </p>
+<p>Production deployments must originate from approved source-controlled changes.</p>
+<hr />
+<p><strong>Project Segregation</strong>: </p>
+<p>Application and data projects remain logically separated.</p>
+<hr />
+<h2 id="multi-team-operating-model">Multi-Team Operating Model</h2>
+<p>The architecture is intentionally replicated across RDD teams.</p>
+<p>Benefits:</p>
+<ul>
+<li>Consistent platform experience</li>
+<li>Reduced support complexity</li>
+<li>Standard onboarding process</li>
+<li>Shared operational tooling</li>
+</ul>
+<hr />
+<h2 id="current-state-assessment-phase-1">Current State Assessment (Phase 1)</h2>
+<p>The current architecture successfully delivers:</p>
+<ul>
+<li>Automated deployments</li>
+<li>Reproducible execution</li>
+<li>Shared deployment workflows</li>
+<li>Controlled environment promotion</li>
+<li>Reusable CI/CD capabilities</li>
+</ul>
+<p>However, several challenges remain.</p>
+<p><strong>Increased Duplication &amp; Complexity</strong>: </p>
+<p>Nearly all the scripts in CI/CD process are replicated in each team's deployment pipeline, resulting in significant duplication, complexity and forcing analysts/scientists to undertake engineering maintenance activities.</p>
+<hr />
+<p><strong>Infrastructure Cost</strong>: </p>
+<p>Vertex AI Workbench incurs standing infrastructure costs even when workloads are not running.</p>
+<hr />
+<p><strong>Runtime Management Complexity</strong>: </p>
+<p>Workbench lifecycle management introduces operational overhead.</p>
+<hr />
+<p><strong>Shared Runtime Risks</strong>:</p>
+<p>Multiple workloads can execute on a shared runtime environment.</p>
+<p>This increases potential blast radius.</p>
+<hr />
+<h2 id="target-state-architecture-phase-2">Target State Architecture (Phase 2)</h2>
+<p>The strategic direction for the platform is a move towards a Platform Engineering operating model.</p>
+<h3 id="vision">Vision</h3>
+<p>Analytical teams should focus exclusively on:</p>
+<ul>
+<li>Business logic</li>
+<li>Statistical methodology</li>
+<li>Data transformation</li>
+</ul>
+<p>The platform should own:</p>
+<ul>
+<li>Runtime management</li>
+<li>Container builds</li>
+<li>Deployment orchestration</li>
+<li>Dependency management</li>
+<li>Security controls</li>
+</ul>
+<hr />
+<h3 id="phase-2-platform-model">Phase 2 Platform Model</h3>
+<p>Refer to <a href="../architecture/">NDAP Proposed Architecture</a></p>
+<hr />
+<p><strong>Thin Repository</strong>:</p>
+<p>Application repositories will contain only:</p>
+<p>Application Code
+workflow.yml
+packages.txt
+Configuration</p>
+<p>All deployment logic will reside centrally.</p>
+<p>Benefits:</p>
+<ul>
+<li><strong>Plug-and-play onboarding</strong></li>
+<li><strong>Minimal duplication</strong></li>
+<li><strong>Simplified maintenance</strong></li>
+<li><strong>Consistent standards</strong></li>
+</ul>
+<hr />
+<p><strong>Golden Runtime Images</strong>: </p>
+<p>The platform will maintain approved base images.</p>
+<p>Examples:</p>
+<p>R 4.4 Base Image
+R 4.5 Base Image</p>
+<p>These images will include:</p>
+<ul>
+<li>Approved R versions</li>
+<li>Approved package baselines</li>
+<li>Common platform tooling</li>
+</ul>
+<p>Stored within:</p>
+<p>Artifact Registry</p>
+<p>Benefits:</p>
+<ul>
+<li><strong>Zero Runtime Drift</strong>: Development and Production execute identical images.</li>
+<li><strong>Consistent Package Versions</strong>: Eliminates environment inconsistencies.</li>
+<li><strong>Faster Deployments</strong>: Common packages no longer require installation during execution.</li>
+<li><strong>Simplified Support</strong>: One known runtime baseline.</li>
+</ul>
+<hr />
+<h3 id="cloud-run-execution-model">Cloud Run Execution Model</h3>
+<p>Phase 2 replaces long-lived runtime infrastructure with ephemeral execution.</p>
+<p>Container Starts
+       |
+Execute Workload
+       |
+Container Stops</p>
+<p>Benefits:</p>
+<ul>
+<li><strong>Pay-Per-Use</strong>: Only pay when workloads execute.</li>
+<li><strong>No Standing Charges</strong>: No idle infrastructure costs.</li>
+<li><strong>Better Cost Efficiency</strong>: Ideal for scheduled analytical workloads.</li>
+<li><strong>Automatic Scaling</strong>: Supports platform growth without infrastructure redesign.</li>
+</ul>
+<hr />
+<h3 id="share-nothing-architecture">Share-Nothing Architecture</h3>
+<p>Each workload executes independently.</p>
+<p>Workload A
+     |
+Container A</p>
+<p>Workload B
+     |
+Container B</p>
+<p>Workload C
+     |
+Container C</p>
+<hr />
+<p>Benefits:</p>
+<ul>
+<li><strong>Minimal Blast Radius</strong>: Failure impacts only the affected workload.</li>
+<li><strong>Improved Reliability</strong>: No shared runtime contamination.</li>
+<li><strong>Better Isolation</strong>: Applications execute independently.</li>
+<li><strong>Predictable Behaviour</strong>: Every run starts from a clean environment.</li>
+</ul>
+<hr />
+<h3 id="immutable-deployments">Immutable Deployments</h3>
+<p>Container images become versioned deployment artefacts.</p>
+<p>Benefits:</p>
+<ul>
+<li><strong>Improved auditability</strong></li>
+<li><strong>Easier rollback</strong></li>
+<li><strong>Predictable releases</strong></li>
+</ul>
+<hr />
+<h3 id="strategic-outcome">Strategic Outcome</h3>
+<p>Phase 1 standardised how analytical applications are deployed.</p>
+<p>Phase 2 standardises the platform itself.</p>
+<p>The future operating model removes infrastructure concerns from analytical teams and provides a centrally managed, reusable and cost-efficient platform.</p>
+<p>Analysts focus solely on analytical code.</p>
+<p>The platform provides:</p>
+<ul>
+<li>Deployment</li>
+<li>Security</li>
+<li>Runtime management</li>
+<li>Dependency management</li>
+<li>Monitoring</li>
+<li>Scaling</li>
+<li>Governance</li>
+</ul>
+<p>This results in a modern, cloud-native analytical platform that is easier to operate, cheaper to run, faster to scale and significantly more resilient than the current state.</p>
 
 
 
