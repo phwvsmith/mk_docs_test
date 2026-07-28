@@ -51,7 +51,7 @@ def download_attachment(url):
 
     token = os.environ.get("ATTACHMENT_TOKEN")
     if token:
-        headers["Authorization"] = f"Bearer {token}"
+        headers["Authorization"] = f"token {token}"
 
     try:
         response = requests.get(

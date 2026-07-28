@@ -41,6 +41,15 @@ jobs:
           pip install -r requirements.txt
           pip install requests
 
+      - name: Check attachment token
+        env:
+          ATTACHMENT_TOKEN: ${{ secrets.ATTACHMENT_TOKEN }}
+        run: |
+          if [ -z "$ATTACHMENT_TOKEN" ]; then
+            echo "::error::ATTACHMENT_TOKEN has not been configured"
+            exit 1
+          fi
+
       - name: Store pasted screenshots
         env:
           ATTACHMENT_TOKEN: ${{ secrets.ATTACHMENT_TOKEN }}
