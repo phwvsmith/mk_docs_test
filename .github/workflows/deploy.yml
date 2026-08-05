@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: deploy-docs
@@ -53,22 +54,34 @@ jobs:
       - name: Store pasted screenshots
         env:
           ATTACHMENT_TOKEN: ${{ secrets.ATTACHMENT_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: python scripts/process_attachments.py
 
-      - name: Commit stored screenshots
+      - name: Deploy processed documentation
+        run: mkdocs gh-deploy --force
+
+      - name: Create pull request for stored screenshots
+        env:
+          GH_TOKEN: ${{ secrets.ATTACHMENT_TOKEN }}
         run: |
+          if [ -z "$(git status --porcelain docs)" ]; then
+            echo "No stored screenshots need committing."
+            exit 0
+          fi
+
+          branch="automation/store-pasted-screenshots-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+
           git config user.name "github-actions[bot]"
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
+          git switch -c "$branch"
           git add docs
+          git commit -m "Store pasted screenshots in repository"
+          git push --set-upstream origin "$branch"
 
-          if ! git diff --cached --quiet; then
-            git commit -m \
-              "Store pasted screenshots in repository [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
-
-      - name: Deploy
-        run: mkdocs gh-deploy --force
+          gh pr create \
+            --base main \
+            --head "$branch" \
+            --title "Store pasted screenshots in repository" \
+            --body "Automatically downloads pasted GitHub attachments, stores them in the repository and updates the Markdown image links."

@@ -25,6 +25,11 @@ jobs:
 
   rebase:
     needs: validate
+
+    # Do not rebase automatically generated screenshot branches.
+    # Rebasing these branches can remove the generated image commit.
+    if: ${{ !startsWith(github.head_ref, 'automation/store-pasted-screenshots-') }}
+
     runs-on: ubuntu-latest
 
     permissions:
@@ -38,7 +43,20 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
   auto-merge:
-    needs: rebase
+    needs:
+      - validate
+      - rebase
+
+    # Continue when validation succeeds and rebase either succeeds
+    # or is deliberately skipped for a screenshot branch.
+    if: |
+      always() &&
+      needs.validate.result == 'success' &&
+      (
+        needs.rebase.result == 'success' ||
+        needs.rebase.result == 'skipped'
+      )
+
     runs-on: ubuntu-latest
 
     permissions:
