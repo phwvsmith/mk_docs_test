@@ -117,3 +117,15 @@ Before saving your page:
 
 If something doesn’t display correctly, it’s usually due to the file path or file name.  
 Double-check both before committing changes.
+
+test: 
+![image](../assets/images/dc273c43-6c92-44af-9ebb-227319ee3eef.png){ width="253" height="64" }
+
+test-28th July 2026:
+![image](../assets/images/da9c3e90-8a36-457d-b7ce-6461435ab0ec.png){ width="470" height="113" }
+
+test-28th July 2026:
+![image](../assets/images/26d3ae5e-d458-488a-8971-ee90e5e171bd.png){ width="363" height="98" }
+
+test-29th July 2026: 
+![image](../assets/images/96ede97f-2389-4daf-b6e5-4c633b3b2b7d.png){ width="833" height="495" }
