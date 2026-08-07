@@ -2,3 +2,4 @@ mkdocs==1.6.1
 mkdocs-material==9.7.6
 mkdocs-awesome-pages-plugin==2.9.2
 requests==2.33.0
+mdx_truly_sane_lists==1.3
